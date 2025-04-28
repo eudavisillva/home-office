@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex"> <title>Direitos Autorais - Davi Silva dos Santos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <header class="site-header">
+        <nav class="language-selector">
+            <button data-lang="pt-BR">🇧🇷 PT-BR</button>
+            <button data-lang="en">🇬🇧 EN</button>
+            <button data-lang="es">🇪🇸 ES</button>
+            <button data-lang="fr">🇫🇷 FR</button>
+            <button data-lang="de">🇩🇪 DE</button>
+        </nav>
+    </header>
+
+    <main class="rights-content">
+        <div class="container">
+            <h1 data-translate="rightsTitle">Direitos Autorais e Termos de Uso</h1>
+
+            <p data-translate="rightsIntroP1">Esta página detalha os termos relacionados ao uso do conteúdo apresentado no website de Davi Silva dos Santos.</p>
+
+            <h2 data-translate="rightsHeading1">1. Propriedade Intelectual</h2>
+            <p data-translate="rightsH1P1">Salvo indicação em contrário, todo o conteúdo exibido neste website – incluindo, mas não se limitando a, textos, gráficos, dados, código-fonte (HTML, CSS, JavaScript), fotografias, imagens, vídeos, sons, ilustrações, artigos, estudos de caso, análises e a seleção e organização dos mesmos ("Conteúdo") – é propriedade de <strong>Davi Silva dos Santos</strong>.</p>
+            <p data-translate="rightsH1P2">O design visual, a estrutura de navegação e os elementos funcionais deste site são igualmente protegidos por direitos autorais.</p>
+            <p data-translate="rightsH1P3">Copyright &copy; <span id="current-year-rights"></span> Davi Silva dos Santos. Todos os direitos reservados.</p> <h2 data-translate="rightsHeading2">2. Uso do Conteúdo</h2>
+            <p data-translate="rightsH2P1">O Conteúdo deste website é disponibilizado exclusivamente para fins informativos e de avaliação profissional do portfólio de Davi Silva dos Santos.</p>
+            <p data-translate="rightsH2P2">É estritamente proibido:</p>
+            <ul>
+                <li data-translate="rightsH2L1">Copiar, reproduzir, republicar, fazer upload, postar, transmitir ou distribuir qualquer parte do Conteúdo por qualquer meio sem a permissão prévia e expressa por escrito de Davi Silva dos Santos.</li>
+                <li data-translate="rightsH2L2">Modificar, adaptar, traduzir ou criar trabalhos derivados baseados no Conteúdo.</li>
+                <li data-translate="rightsH2L3">Utilizar o Conteúdo para fins comerciais ou de forma que possa competir direta ou indiretamente com as atividades profissionais de Davi Silva dos Santos.</li>
+                <li data-translate="rightsH2L4">Remover ou alterar quaisquer avisos de direitos autorais, marcas registradas ou outros avisos de propriedade contidos no Conteúdo.</li>
+            </ul>
+            <p data-translate="rightsH2P3">O acesso ao conteúdo não concede ao usuário qualquer licença ou direito de propriedade sobre o mesmo.</p>
+
+            <h2 data-translate="rightsHeading3">3. Conteúdo de Terceiros e Links Externos</h2>
+            <p data-translate="rightsH3P1">Este site pode conter links para websites de terceiros ou exibir conteúdo originário de terceiros (por exemplo, bibliotecas de código, fontes, ícones). Tal conteúdo e links são fornecidos apenas para conveniência e informação. Davi Silva dos Santos não se responsabiliza pela precisão, legalidade ou conteúdo de sites externos ou de materiais de terceiros.</p>
+
+            <h2 data-translate="rightsHeading4">4. Isenção de Garantias</h2>
+            <p data-translate="rightsH4P1">Embora todos os esforços sejam feitos para garantir a precisão e atualização do Conteúdo, este é fornecido "como está", sem garantias de qualquer tipo, expressas ou implícitas. Davi Silva dos Santos não garante que o site ou seu conteúdo atenderá aos requisitos do usuário ou que será ininterrupto, oportuno, seguro ou livre de erros.</p>
+
+            <h2 data-translate="rightsHeading5">5. Contato</h2>
+            <p data-translate="rightsH5P1">Para solicitar permissão de uso do Conteúdo ou para quaisquer outras questões relacionadas a estes termos, por favor, entre em contato através do <a href="index.html#contact">formulário de contato</a> no site principal ou pelo e-mail fornecido no rodapé.</p>
+
+            <a href="index.html" class="back-link button" data-translate="rightsBackLink">Voltar ao Portfólio</a>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/davi-silva-dos-santos-sql-python-en-pt" target="_blank" aria-label="LinkedIn">LinkedIn</a>
+                <a href="https://github.com/seu-usuario-github" target="_blank" aria-label="GitHub">GitHub</a>
+                <a href="mailto:seu.email@exemplo.com" aria-label="Email">Email</a>
+                <a href="tel:+5598981543912" aria-label="Telefone">+55 (98) 98154-3912</a>
+            </div>
+            <p>&copy; <span id="current-year"></span> <a href="rights.html" class="footer-owner-link" title="Ver Direitos Autorais e Termos de Uso" data-translate="footerOwnerName">Davi Silva dos Santos</a>. <span data-translate="footerRights">Todos os direitos reservados.</span></p>
+        </div>
+    </footer>
+    <script>
+        // Pequeno script para garantir que o ano na seção de direitos seja atualizado
+        // mesmo que o script principal demore um pouco ou falhe em parte
+         const rightsYearSpan = document.getElementById('current-year-rights');
+         if (rightsYearSpan) {
+             rightsYearSpan.textContent = new Date().getFullYear();
+         }
+     </script>
+
+</body>
+</html>

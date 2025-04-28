@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Davi Silva dos Santos - Analista de Dados Júnior</title>
+    <meta name="description" content="Portfólio de Davi Silva dos Santos, Analista de Dados Júnior especializado em Python, SQL e Power BI. Explore meus projetos e habilidades.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <header class="site-header">
+        <nav class="language-selector">
+            <button data-lang="pt-BR">🇧🇷 PT-BR</button>
+            <button data-lang="en">🇬🇧 EN</button>
+            <button data-lang="es">🇪🇸 ES</button>
+            <button data-lang="fr">🇫🇷 FR</button>
+            <button data-lang="de">🇩🇪 DE</button>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero" class="hero-section animate-on-scroll">
+            <div class="container">
+                <h1 data-translate="greeting">Olá, eu sou</h1>
+                <h2 class="name">Davi Silva dos Santos</h2>
+                <p class="job-title" data-translate="jobTitle">Analista de Dados Júnior | Python, SQL, Power BI</p>
+                <a href="#contact" class="cta-button" data-translate="contactMe">Entre em Contato</a>
+            </div>
+        </section>
+
+        <section id="projects" class="projects-section">
+            <div class="container">
+                <h2 class="section-title animate-on-scroll" data-translate="projectsTitle">Projetos em Destaque</h2>
+                <div class="projects-grid">
+                    <article class="project-card animate-on-scroll">
+                        <img src="images/placeholder-project.png" alt="Preview do Projeto 1" loading="lazy">
+                        <div class="card-content">
+                            <h3 data-translate="project1Title">Análise de Vendas Mensais</h3>
+                            <p data-translate="project1Desc">Dashboard interativo em Power BI para visualização de KPIs de vendas.</p>
+                            <a href="#" target="_blank" class="button" data-translate="viewProject">Ver Projeto</a>
+                        </div>
+                    </article>
+                    <article class="project-card animate-on-scroll">
+                        <img src="images/placeholder-project.png" alt="Preview do Projeto 2" loading="lazy">
+                         <div class="card-content">
+                            <h3 data-translate="project2Title">Segmentação de Clientes com Python</h3>
+                            <p data-translate="project2Desc">Utilização de Python (Pandas, Scikit-learn) para agrupar clientes com base em comportamento.</p>
+                            <a href="#" target="_blank" class="button" data-translate="viewProject">Ver Projeto</a>
+                        </div>
+                    </article>
+                    <article class="project-card animate-on-scroll">
+                        <img src="images/placeholder-project.png" alt="Preview do Projeto 3" loading="lazy">
+                         <div class="card-content">
+                            <h3 data-translate="project3Title">Automação de Relatórios com SQL</h3>
+                            <p data-translate="project3Desc">Criação de scripts SQL para automatizar a geração de relatórios diários.</p>
+                            <a href="#" target="_blank" class="button" data-translate="viewProject">Ver Projeto</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="skills-section">
+            <div class="container">
+                <h2 class="section-title animate-on-scroll" data-translate="skillsTitle">Habilidades Técnicas</h2>
+                <div class="skills-list animate-on-scroll">
+                    <div class="skill-item">
+                        <span class="skill-icon">Py</span> <p>Python</p>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-icon">SQL</span> <p>SQL</p>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-icon">PBI</span> <p>Power BI</p>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-icon">ML</span> <p>Machine Learning</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <h2 class="section-title animate-on-scroll" data-translate="contactTitle">Contato</h2>
+                <form id="contact-form" class="contact-form animate-on-scroll">
+                    <div class="form-group">
+                        <label for="name" data-translate="formName">Nome</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email" data-translate="formEmail">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message" data-translate="formMessage">Mensagem</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <div id="form-feedback" class="form-feedback" aria-live="polite"></div>
+                    <button type="submit" class="button" data-translate="formSubmit">Enviar Mensagem</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/davi-silva-dos-santos-sql-python-en-pt" target="_blank" aria-label="LinkedIn">LinkedIn</a>
+                <a href="https://github.com/seu-usuario-github" target="_blank" aria-label="GitHub">GitHub</a>
+                <a href="mailto:seu.email@exemplo.com" aria-label="Email">Email</a>
+                <a href="tel:+5598981543912" aria-label="Telefone">+55 (98) 98154-3912</a>
+            </div>
+            <p>&copy; <span id="current-year"></span> <a href="rights.html" class="footer-owner-link" title="Ver Direitos Autorais e Termos de Uso" data-translate="footerOwnerName">Davi Silva dos Santos</a>. <span data-translate="footerRights">Todos os direitos reservados.</span></p>
+             </div>
+    </footer>
+
+</body>
+</html>
